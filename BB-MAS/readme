@@ -1,0 +1,8 @@
+GroupSplit.txt
+Describes how the original dataset is separated for participant-disjoint training, testing and validation sets.
+
+SiameseNetBBMAS.py
+Model structure and loss function.
+
+SiameseMIL.py
+Model training and testing.
