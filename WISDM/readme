@@ -1,0 +1,9 @@
+GroupSplit.txt
+Describes how the original dataset is separated for participant-disjoint training, testing and validation sets.
+
+SiameseNetWISDM.py
+Model structure and loss function.
+
+AinC_SiameseMIL.py etc.
+AinC means inject activity A data into activity C data to make attack sample. 
+Model training and testing.
