@@ -209,7 +209,7 @@ if __name__ == '__main__':
     overlap = 0.5
     print("ifsmooth = {}, overlap = {}".format(ifsmooth, overlap))
     for group in groups:
-        path = '/home/jxin05/WESAD_BVP/bvp_data/' + group + '/'
+        path = './WESAD_BVP/bvp_data/' + group + '/'
 
         print("Loading training data...")
         if (ifsmooth):
@@ -338,9 +338,9 @@ if __name__ == '__main__':
         net = SiameseNetWESAD.SiameseNetwork4s()
         # net.apply(init_weights)
         if (ifsmooth):
-            out = '/home/jxin05/WESAD_BVP/res/smooth/models/'
+            out = './WESAD_BVP/res/smooth/models/'
         else:
-            out = '/home/jxin05/WESAD_BVP/res/nonsmooth/models/'
+            out = './WESAD_BVP/res/nonsmooth/models/'
 
         model_list = MILtrain4s(net, trainX, trainY, valX, valY, overlap=overlap, epochs=250)
 
